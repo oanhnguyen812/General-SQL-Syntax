@@ -1,0 +1,5 @@
+---Join the matching country column from the prime_ministers table as left table and the presidents as right table.
+SELECT p1.country, p1.continent, prime_minister, president
+FROM prime_ministers AS p1
+INNER JOIN presidents AS p2
+ON p1.country = p2.country;
